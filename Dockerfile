@@ -18,5 +18,6 @@ ADD ./build.sh /src
 RUN sh /src/build.sh
 
 RUN apk del git
+RUN apk add --update bash
 
-ENTRYPOINT ["sh"]
+ENTRYPOINT ["bash"]

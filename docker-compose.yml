@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    user-service:
+        image: daocloud.io/jsongo/go
+        container_name: go-micro-user
+        ports:
+            - 3307:3306
+        #environment:
+            #- MYSQL_USER=super_camera
+        volumes:
+            - .:/src
+        command: run main
