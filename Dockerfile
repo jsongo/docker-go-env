@@ -14,6 +14,8 @@ ENV PATH $PATH:$GOPATH/bin
 
 RUN go get google.golang.org/grpc
 
+RUN ./build.sh
+
 RUN apk del git
 
 ENTRYPOINT ["go"]
