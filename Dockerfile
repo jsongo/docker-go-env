@@ -15,7 +15,7 @@ ENV PATH $PATH:$GOPATH/bin
 RUN go get google.golang.org/grpc
 
 ADD ./build.sh /src
-RUN ./build.sh
+RUN sh /src/build.sh
 
 RUN apk del git
 
