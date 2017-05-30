@@ -19,4 +19,4 @@ RUN sh /src/build.sh
 
 RUN apk del git
 
-ENTRYPOINT ["ash"]
+CMD ["ash"]
